@@ -77,4 +77,14 @@ console.log(anotherCar.brand);
 // add some extra if you want
 // Make sure that the function allows for the output of a sentence that describes the hamburger, too
 
+function Hamburger(bun, meat, cheese, sauce, toppings) {
+    this.bun = bun;
+    this.meat = meat;
+    this.cheese = cheese;
+    this.sauce = sauce;
+    this.toppings = toppings;
+    this.description = function () {
+        return `The hamburger has ${this.bun}, ${this.meat}, ${this.cheese}, ${this.sauce}, ${this.toppings}.`;
+    }
+}
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
